@@ -4,14 +4,24 @@
   "repository": "git@github.com:karine-larouche/color-utils.git",
   "author": "Karine Larouche <karine.larouche14@gmail.com>",
   "license": "MIT",
-  "keywords": ["colour", "color", "utils" ],
+  "keywords": [
+    "colour",
+    "color",
+    "utils"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
+    "test": "jest --config jestconfig.json",
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
   }
 }
