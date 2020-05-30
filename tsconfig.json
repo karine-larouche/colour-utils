@@ -3,7 +3,8 @@
     "module": "commonjs",
     "target": "es5",
     "declaration": true,
-    "outDir": "lib"
+    "outDir": "lib",
+    "types": ["jest"]
   },
   "include": ["src"],
   "exclude": ["src/**/*.test.ts"]

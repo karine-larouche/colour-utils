@@ -1,7 +1,7 @@
 {
   "name": "colour-utils",
   "version": "1.0.0",
-  "repository": "git@github.com:karine-larouche/color-utils.git",
+  "repository": "git@github.com:karine-larouche/colour-utils.git",
   "author": "Karine Larouche <karine.larouche14@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "test": "jest --config jestconfig.json",
+    "watch": "jest --watch --config jestconfig.json",
     "build": "tsc"
   },
   "devDependencies": {
