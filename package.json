@@ -1,6 +1,7 @@
 {
   "name": "colour-utils",
   "version": "1.0.0",
+  "description": "Utility library for colour manipulation",
   "repository": "git@github.com:karine-larouche/colour-utils.git",
   "author": "Karine Larouche <karine.larouche14@gmail.com>",
   "license": "MIT",

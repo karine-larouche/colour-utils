@@ -1,31 +1,31 @@
 import { mix } from '.'
 
 test('The first colour is returned when the ratio is 0', () => {
-  expect(mix('#123456','#abcdef', 0)).toBe('#123456');
+  expect(mix('#123456', '#abcdef', 0)).toBe('#123456');
 });
 
 test('The second colour is returned when the ratio is 1', () => {
-  expect(mix('#123456','#abcdef', 1)).toBe('#abcdef');
+  expect(mix('#123456', '#abcdef', 1)).toBe('#abcdef');
 });
 
 test('The red quantity is the ponderated average of the 2 provided colour\'s red quantities', () => {
-  expect(mix('#120000','#ee0000', .55)).toBe('#8b0000');
+  expect(mix('#120000', '#ee0000', .55)).toBe('#8b0000');
 });
 
 test('The green quantity is the ponderated average of the 2 provided colour\'s green quantities', () => {
-  expect(mix('#001200','#00ee00', .55)).toBe('#008b00');
+  expect(mix('#001200', '#00ee00', .55)).toBe('#008b00');
 });
 
 test('The blue quantity is the ponderated average of the 2 provided colour\'s blue quantities', () => {
-  expect(mix('#000012','#0000ee', .55)).toBe('#00008b');
+  expect(mix('#000012', '#0000ee', .55)).toBe('#00008b');
 });
 
 test('Unexact results are rounded', () => {
-  expect(mix('#000000','#010203', .6)).toBe('#010102');
+  expect(mix('#000000', '#010203', .6)).toBe('#010102');
 });
 
 test('Upper and lower case letters are accepted', () => {
-  expect(mix('#000000','#aaAA00', .5)).toBe('#555500');
+  expect(mix('#000000', '#aaAA00', .5)).toBe('#555500');
 });
 
 describe('Error handling', () => {
