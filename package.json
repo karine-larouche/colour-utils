@@ -1,6 +1,6 @@
 {
   "name": "colour-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Utility library for colour manipulation",
   "repository": "git@github.com:karine-larouche/colour-utils.git",
   "author": "Karine Larouche <karine.larouche14@gmail.com>",
@@ -18,7 +18,9 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "watch": "jest --watch --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
