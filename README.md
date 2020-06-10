@@ -2,6 +2,14 @@
 
 Utility library for colour manipulation.
 
+## Installation
+
+```
+npm install colour-utils
+```
+
+## Usage
+
 ### `mix`
 
 Mixes 2 colours according to the provided ratio.
@@ -19,6 +27,8 @@ Mixes 2 colours according to the provided ratio.
 #### Example
 
 ```
+import { mix } from 'colour-utils';
+
 mix('#000000', '#444444', .25);
 // '#111111
 ```
