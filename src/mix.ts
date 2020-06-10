@@ -9,7 +9,7 @@ const fromHex = (hexColour: string) : number[] =>
 const toHex = (colour: number[]) : string =>
   colour.reduce((res, c) => res + numberToHexString(c), '#');
 
-export const mix = (colourA: string, colourB: string, ratio: number) : string => {
+export const mix = (colourA: string, colourB: string, ratio: number = .5) : string => {
   const hexRegex = /^#(\d|[a-f]|[A-F]){6}$/;
   if (!hexRegex.test(colourA)) {
     throw new Error(`First argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ${colourA}`);

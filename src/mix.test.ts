@@ -28,6 +28,10 @@ test('Upper and lower case letters are accepted', () => {
   expect(mix('#000000', '#aaAA00', .5)).toBe('#555500');
 });
 
+test('.5 ratio is used when no ratio is provided', () => {
+  expect(mix('#000000', '#222222')).toBe('#111111');
+});
+
 describe('Error handling', () => {
   test('Providing an invalid first colour throws a meaningful error', () => {
     const expected = 'First argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ';

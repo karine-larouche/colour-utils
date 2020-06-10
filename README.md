@@ -10,7 +10,7 @@ Mixes 2 colours according to the provided ratio.
 
 - **colourA (string)**: The first colour to mix, in rgb format (e.g. `'#000000'`).
 - **colourB (string)**: The second colour to mix, in rgb format (e.g. `'#000000'`).
-- **ratio (number)**: The ratio of colourB in the resulting mix. Should be between 0 and 1, inclusive.
+- **[ratio = 0.5] (number)**: The ratio of colourB in the resulting mix. Should be between `0` and `1`, inclusive.
 
 #### Return
 
