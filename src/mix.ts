@@ -14,7 +14,7 @@ const toHex = (colour: number[]) : string =>
  *
  * @param colourA - The first colour to mix, in rgb format (e.g. `'#000000'`).
  * @param colourB - The second colour to mix, in rgb format (e.g. `'#000000'`).
- * @param ratio The ratio of colourB in the resulting mix. Should be between `0` and `1`, inclusive.
+ * @param ratio The ratio of colourB in the resulting mix. Should be between `0` and `1`, inclusive. Default value is `0.5`.
  * @returns The colour resulting from mixing colourA and colourB, in rgb format (e.g. `'#000000'`).
  */
 export const mix = (colourA: string, colourB: string, ratio: number = .5) : string => {
