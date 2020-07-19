@@ -16,10 +16,10 @@ const toHex = (colour: number[]): string =>
 /**
  * Mixes 2 colours according to the provided ratio.
  *
- * @param colourA - The first colour to mix, in rgb format (e.g. `'#000000'`).
- * @param colourB - The second colour to mix, in rgb format (e.g. `'#000000'`).
+ * @param colourA The first colour to mix, in hex format (e.g. `'#000000'`).
+ * @param colourB The second colour to mix, in hex format (e.g. `'#000000'`).
  * @param ratio The ratio of colourB in the resulting mix. Should be between `0` and `1`, inclusive. Default value is `0.5`.
- * @returns The colour resulting from mixing colourA and colourB, in rgb format (e.g. `'#000000'`).
+ * @returns The colour resulting from mixing colourA and colourB, in hex format (e.g. `'#000000'`).
  */
 export const mix = (colourA: string, colourB: string, ratio = 0.5): string => {
   const hexRegex = /^#(\d|[a-f]|[A-F]){6}$/;
