@@ -1,6 +1,6 @@
 {
   "name": "colour-utils",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Utility library for colour manipulation",
   "repository": "git@github.com:karine-larouche/colour-utils.git",
   "author": "Karine Larouche <karine.larouche14@gmail.com>",
@@ -24,17 +24,15 @@
     "prepublishOnly": "yarn lint && yarn test"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^26.0.8",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "jest": "^26.0.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.2.2",
     "prettier": "^2.0.5",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.9.3"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.2.0",
-    "@typescript-eslint/parser": "^3.2.0",
-    "eslint": "^7.2.0"
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   }
 }
