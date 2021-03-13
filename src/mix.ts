@@ -30,7 +30,7 @@ export const mix = (colourA: string, colourB: string, ratio = 0.5): string => {
   }
   if (!hexRegex.test(colourB)) {
     throw new Error(
-      `Second argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ${colourA}`,
+      `Second argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ${colourB}`,
     );
   }
   if (ratio < 0 || ratio > 1) {

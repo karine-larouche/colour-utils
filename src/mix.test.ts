@@ -36,13 +36,13 @@ describe('Error handling', () => {
   test('Providing an invalid first colour throws a meaningful error', () => {
     const expected =
       'First argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ';
-    expect(() => mix('#000', '#000000', 0)).toThrowError(expected + '#000');
+    expect(() => mix('#111', '#000000', 0)).toThrowError(expected + '#111');
   });
 
   test('Providing an invalid second colour throws a meaningful error', () => {
     const expected =
       'Second argument of "mix" is invalid. Expected hex colour string (e.g. #123456), but received ';
-    expect(() => mix('#000000', '#000', 0)).toThrowError(expected + '#000');
+    expect(() => mix('#000000', '#111', 0)).toThrowError(expected + '#111');
   });
 
   test('Hex colour strings with fewer than 6 digits are not accepted', () => {
